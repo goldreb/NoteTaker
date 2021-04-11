@@ -39,7 +39,8 @@ The following images show the web application's appearance and functionality:
 
 ![Note taker deployed](./Assets/notetakergetstarted.JPG)
 
-https://drive.google.com/file/d/13Ai9-n3KFZxUfu1ux-pSHzsuhB5H1_Oy/view
+
+https://drive.google.com/file/d/194c1zjXSSBtpxoHULBODjhpIMY-ymQ2-/view
 
 ## Deployed Heroku link
 https://hidden-dawn-10471.herokuapp.com/
