@@ -13,12 +13,12 @@ let makeNote = [];
 
 app.use(express.json());
 app.use(express.urlencoded({
-    extended: true
+    extended: true,
 }));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/api/notes", function (err, res) {
+app.get("/api/notes", function (_err, res) {
     try {
         makeNote = fs.readFileSync("db/db.json", "utf8");
         console.log("Server is ready!")
@@ -46,7 +46,6 @@ app.post("/api/notes", function (req, res) {
         res.json(JSON.parse(makeNote));
     } catch (err) {
         throw err;
-        console.error(err);
     }
 });
 
@@ -67,21 +66,20 @@ app.delete("/api/notes", function (req, res) {
         res.send(JSON.parse(makeNote));
     } catch (err) {
         throw err;
-        console.log(err);
     }
 
 });
 
 //html GET requests
-app.get("/notes", function (req, res) {
+app.get("/notes", function (_req, res) {
     res.sendFile(path.join(__dirname, "public/notes.html"));
 });
 
-app.get("*", function (req, res) {
+app.get("*", function (_req, res) {
     res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
-app.get("/api/notes", function (req, res) {
+app.get("/api/notes", function (_req, res) {
     return res.sendFile(path.json(__dirname, "db/db.json"));
 });
 
