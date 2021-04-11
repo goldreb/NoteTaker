@@ -35,7 +35,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Mock-Up
 
 The following images show the web application's appearance and functionality: 
-![Note taker deployed](./Assets/note.JPG)
+![Note taker deployed](./Assets/notetaker.JPG)
 
 ![Note taker deployed](./Assets/notetakergetstarted.JPG)
 
